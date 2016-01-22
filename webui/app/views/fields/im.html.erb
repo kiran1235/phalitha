@@ -1,0 +1,67 @@
+<h1 style="border-bottom:1px solid #000">Mapping Designer(<%=@mapping.name%>) <small> in Instance(<%=@instance.name%>)</small> </h1>
+<div class="row">
+	<div class="col-sm-12 box-group">
+		<h2 class="col-sm-2 text-muted" data-target="frmSetupMapping"> 1. Setup </h2>
+		<h2 class="col-sm-2 active" data-target="frmCreateMapping"> 2. Import </h2>
+		<h2 class="col-sm-2 text-muted" data-target="frmCreateMapping"> 3. Configuraion </h2>
+		<h2 class="col-sm-2 text-muted" data-target="frmValidateMapping"> 4. Permissions </h2>
+		<h2 class="col-sm-2 text-muted" data-target="frmValidateMapping"> 5. Validation </h2>
+	</div>
+</div>
+
+<% if @mapping.sourcetype.eql?"xml" %>
+<div id="frmImportSourceContainer">
+<div>
+	<form id="frmImportSource" action="<%=instance_mapping_fields_import_path(@instance,@mapping)%>" enctype="multipart/form-data" method="post">
+		<h2 class="text-primary s1">1. Import Source <button type="button" class="btn btn-primary" onclick="beginImport()"> Import </button></h2>
+		<%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+		<input id="frmImportSource_file" name="datafile" type="file" class="hide"  data-icon="false" data-buttonText="Browse.." accept="xml" onchange="validate(this);">
+	</form>
+</div>
+<h2 class="text-muted s2">2. Uploading Source </h2>
+<h2 class="text-muted s3">3. Validating Source </h2>
+<h2 class="text-muted s4">4. Creating Source Structure</h2>
+</div>
+<% end %>
+
+<script>
+
+function validate(o){
+	ext=o.value.split('.').pop();
+	accepts=o.getAttribute("accept");
+	if(accepts.indexOf(ext)<=-1){
+		alert("Please select valid file with extension as "+accepts);
+	}else{
+			$("#frmImportSourceContainer .s2").removeClass("text-muted").addClass("text-success");
+			$("#frmImportSourceContainer .s1").removeClass("text-muted").addClass("text-success");
+			$("#hiddenframe").remove();
+			parent=$("#frmImportSource").parent();
+			temp=$(parent).clone();
+			$("<iframe id='hiddenframe' src='javascript:false;' style='position:absolute;top:-70px;left:-320px;'></iframe>").appendTo('body');
+			$('#hiddenframe').contents().find('body').append($("#frmImportSource"));
+			$(parent).replaceWith(temp);
+			src=$('#hiddenframe').contents().find('#frmImportSource');
+			$('#hiddenframe').on("load",function(event){
+				$("#frmImportSourceContainer .s3").removeClass("text-muted").addClass("text-success");
+				body=$('#hiddenframe').contents().find('body');
+				btext=$(body).text();
+				json=$.parseJSON(btext);
+				if (json.rc==0){
+					window.location=json.redirect
+				}else if(json.rc==1){
+					alert("errored");
+				}
+			});
+			
+			$(src).submit();	
+			
+			
+		}
+}
+
+function beginImport(){
+	$("#frmImportSource_file").trigger("click");
+}
+
+
+</script>

@@ -1,0 +1,64 @@
+<h2 style="border-bottom:1px solid #000000">Instance: <%=@instance.name%></h2>
+<ul class="nav nav-left nav-pills nav-pills-xs">
+    <li class="active">
+        <a data-toggle="tab" href="#tab_1">Mappings</a>
+    </li>
+    <li>
+        <a data-toggle="tab" href="#tab_2">Users</a>
+    </li>
+    <!-- <li>
+        <a data-toggle="tab" href="#tab_3">Settings</a>
+    </li> -->
+</ul>
+
+<div class="tab-content">
+	<div id="tab_1" class="tab-pane active table-container " style="margin:5px 0px;padding:0px">
+		<a data-no-turbolink="true" type="button" class="btn btn-success" href="<%=new_instance_mapping_path(@instance.id)%>">New Mapping</a>
+		<% if @mappings.size <=0 %>
+		<h3> No Mappings found</h3>
+		<%else%>
+		<table class="table table-striped table-bordered table-condensed table-hover" data-role="datagrid" style="margin-top:5px;">
+			<tr><th>Mapping</th><th class="col-md-9">Description</th><th>Type</th><th>&nbsp;</th></tr>
+			<% @mappings.find_each do |mapping|%>
+			<tr class="datagrid-row" data-id="<%= "im#{@instance.id}_#{mapping.id}"%>">
+				<td><%= link_to mapping.name, instance_mapping_path(@instance,mapping) %></td>
+				<td><%=mapping.description%><%=mapping.mapping_access_point%></td>
+				<td><%=mapping.sourcetype%></td>
+				<td class="text-center">
+				 
+				  <form action="<%=instance_mapping_path(@instance,mapping)%>" method="post">
+				  	<%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+				  	<input type="hidden" name="_method" value="delete">
+				  	<%= submit_tag "Delete", class: "btn btn-sm btn-danger" , data: { disable_with: "Please wait..." , confirm: "Are you sure?"} %>
+	   			    <a href="<%=logs_mappings_url(:id => mapping)%>" class="btn btn-sm btn-default">Logs</button>
+				  </form>
+				</td>
+			</tr>
+			<%end%>
+		</table>
+		<%end%>
+	</div>
+	<div id="tab_2" class="tab-pane table-container" style="margin:5px 0px;padding:0px">
+		<a data-no-turbolink="true" type="button" class="btn btn-success" href="<%=new_instance_user_path(@instance.id)%>">New User</a>
+		<% if @users.size <=0 %>
+		<h3> No Users found</h3>
+		<%else%>
+		<table class="table table-striped table-bordered table-condensed table-hover" data-role="datagrid" style="margin-top:5px;">
+			<tr><th>Name</th><th>Username</th><th>&nbsp;</th></tr>
+			<% @users.find_each do |user|%>
+			<tr class="datagrid-row" data-id="<%= "iu#{@instance.id}_#{user.id}"%>">
+				<td><%=user.name%></td>
+				<td><%=user.username%></td>
+				<td>
+				  <button type="button" class="btn btn-default" onclick="javascript:window.App.datagrid.remove('<%=instance_user_path(@instance.id,user.id)%>')">Delete</button>
+				  <a href="<%=logs_users_url(:id => user)%>" class="btn btn-default">Logs</button>
+				</td>
+			</tr>	
+			<%end%>						
+		</table>
+		<%end%>
+	</div>
+	<div id="tab_3" class="tab-pane table-container" style="margin:5px 0px;padding:0px">
+	</div>
+</div>
+

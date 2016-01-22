@@ -1,0 +1,144 @@
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "mapping" %>
+<% end %>
+
+<h1 style="border-bottom:1px solid #000">Create New Mapping <small> in Instance(<%=@instance.name%>)</small> </h1>
+<div class="row">
+	<div class="col-sm-12 box-group">
+		<h3 class="col-sm-2 active" data-target="frmSetupMapping"> 1. Setup </h2>
+		<h3 class="col-sm-2 text-muted" data-target="frmCreateMapping"> 2. Import </h2>
+		<h3 class="col-sm-2 text-muted" data-target="frmCreateMapping"> 3. Configuraion </h2>
+		<h3 class="col-sm-2 text-muted" data-target="frmValidateMapping"> 4. Permissions </h2>
+		<h3 class="col-sm-2 text-muted" data-target="frmValidateMapping"> 5. Validation </h2>
+	</div>
+</div>
+<%= form_for @mapping, url: {action:"create", format: :html}, html: {id:"frmSetupMapping", class:"form-horizontal", role:"form"} do |f| %>
+<div class="form-group">
+    <div class="col-sm-2">
+    	&nbsp;
+    </div>
+    <div class="col-sm-4">
+      <label class="control-label">All fields are required</label>		
+    </div>
+  </div>
+
+<div class="form-group">
+    <div class="col-sm-2">
+      <label for="inName" class="control-label">Mapping Name</label>
+    </div>
+    <div class="col-sm-4">
+      <%= f.text_field :name, class:"form-control", placeholder:"Only Alphabets, Numbers are allowed" %>	
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-2">
+      <label for="inDescription" class="control-label">Description</label>
+    </div>
+    <div class="col-sm-4">
+      <%= f.text_area  :description, class:"form-control", placeholder:"Only 1000 Charecters" %>
+    </div>
+  </div> 
+  <div class="form-group">
+    <div class="col-sm-2">
+      <label for="inFormat" class="control-label">Input Source Type</label>
+    </div>
+    <div class="col-sm-4">
+    	<%= f.select :sourcetype,  options_for_select(["xml","database"]), {:include_blank => '-required-'}, {:class=>"form-control", :onchange => 'showFormOption(this);'} %>
+    </div>
+  </div>  
+  
+  <div class="option" data-target="xml">
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Source File Location</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :sourcefilepath, class:"form-control", placeholder:"Valid file path" %>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Target File Location</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :targetfilepath, class:"form-control", placeholder:"Valid file path" %>
+	    </div>
+	  </div>	  
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">File name</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :sourcefilename, class:"form-control", placeholder:"Valid file name with alphbets and numeric letters" %>
+	    </div>
+	  </div>
+  </div>  
+  
+  <div class="option" data-target="database">
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Database Hostname</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :hostname, class:"form-control", placeholder:"Hostname" %>
+	    </div>
+	    <div class="col-sm-2">
+	    	<%= f.text_field :portno, class:"form-control", placeholder:"Port number" %>
+	    </div>	    
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Encoding</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :encoding, class:"form-control", placeholder:"utf-8" %>
+	    </div>
+	  </div>	  	  	  
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Database</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :databasename, class:"form-control", placeholder:"Database" %>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Username</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :username, class:"form-control", placeholder:"User with read/write access" %>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Password</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :accesscode, class:"form-control", placeholder:"Password" %>
+	    </div>
+	  </div>  
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Source Table</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :sourcename, class:"form-control", placeholder:"[Schema.]<Tablename>" %>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Target Table</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :targetname, class:"form-control", placeholder:"[Schema.]<Tablename>" %>
+	    </div>
+	  </div>
+  </div>
+        
+ <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= submit_tag "Create", class: "btn btn-default btn-primary" , data: { disable_with: "Please wait..." , confirm: "Are you sure?"} %>
+    </div>
+  </div>
+<% end %>

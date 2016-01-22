@@ -1,0 +1,13 @@
+<h1 style="border-bottom:1px solid #000">Mapping (<%=@mapping.name%>) <small> in Instance(<%=@instance.name%>)</small> </h1>
+<div class="row">
+	<div class="col-sm-12 box-group">
+		<h2 class="col-sm-4 text-muted" data-target="frmSetupMapping"> 1. Setup </h2>
+		<h2 class="col-sm-4 active" data-target="frmCreateMapping"> 2. Mapping </h2>
+		<h2 class="col-sm-4 text-muted" data-target="frmValidateMapping"> 3. Validation </h2>
+	</div>
+</div>
+
+<%= form_tag('/upload', multipart: true) do %>
+<p><label for="upload_file">Import</label>:<%= file_field_tag 'datafile' %></p>
+<%= submit_tag "Upload" %>
+<%end %>

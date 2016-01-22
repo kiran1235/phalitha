@@ -1,0 +1,82 @@
+<h2 style="border-bottom:1px solid #000000">Instance: <%=@instance.name%></h2>
+<ul class="nav nav-left nav-pills nav-pills-xs">
+    <li class="active">
+        <a data-toggle="tab" href="#tab_1">Mappings</a>
+    </li>
+    <li>
+        <a data-toggle="tab" href="#tab_2">Users</a>
+    </li>
+    <li>
+        <a data-toggle="tab" href="#tab_3">Logs</a>
+    </li>                
+    <li>
+        <a data-toggle="tab" href="#tab_4">Settings</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+	<div id="tab_1" class="tab-pane active table-container" style="margin:5px 0px;padding:0px">
+		<a type="button" class="btn btn-success" href="<%=new_instance_mapping_path(@instance.id)%>">New Mapping</a>
+		<% if @mappings.size <=0 %>
+		<h3> No Mappings found</h3>
+		<%else%>
+		<table class="table table-striped table-bordered table-condensed table-hover" data-role="datagrid" style="margin-top:5px;">
+			<tr><th>Mapping</th><th class="col-md-8">Description</th><th>Type</th><th>&nbsp;</th></tr>
+			<% @mappings.each do |mapping|%>
+			<tr>
+				<td><%= link_to mapping.name, instance_mapping_path(@instance,mapping) %></td>
+				<td><%=mapping.description%></td>
+				<td><%=mapping.sourcetype%></td>
+				<td>
+						<div class="btn-group" role="group" aria-label="...">
+						  <button type="button" class="btn btn-default">Delete</button>
+						  <button type="button" class="btn btn-default">Users</button>
+						  <button type="button" class="btn btn-default">Logs</button>
+						</div>
+				</td>
+			</tr>
+			<%end%>
+		</table>
+		<%end%>
+	</div>
+	<div id="tab_2" class="col-md-8 tab-pane table-container" style="margin:5px 0px;padding:0px">
+		<button type="button" class="btn btn-success">New User</button>
+		<% if @users.size <=0 %>
+		<h3> No Users found</h3>
+		<%else%>
+		<table class="table table-striped table-bordered table-condensed table-hover" data-role="datagrid" style="margin-top:5px;">
+			<tr><th  class="col-md-5">Username</th><th>Role</th><th>&nbsp;</th></tr>
+			<% @users.each do |user|%>
+			<tr>
+				<td><%=user.name%></td>
+				<td>Admin</td>
+				<td>
+						<div class="btn-group" role="group" aria-label="...">
+						  <button type="button" class="btn btn-default">Edit</button>
+						  <button type="button" class="btn btn-default">Delete</button>
+						  <button type="button" class="btn btn-default">Formats</button>
+						  <button type="button" class="btn btn-default">Logs</button>
+						</div>
+				</td>
+			</tr>	
+			<%end%>						
+		</table>
+		<%end%>
+	</div>
+	<div id="tab_3" class="tab-pane table-container" style="margin:5px 0px;padding:0px">
+		<table class="table table-striped table-bordered table-condensed table-hover" data-role="datagrid">
+			<tr><th>Date</th><th>Event Type</th><th class="col-md-10">Event Details</th></tr>
+			<tr>
+				<td>2012-07-20</td>
+				<td>User</td>
+				<td>User created</td>
+			</tr>	
+			<tr>
+				<td>2012-07-20</td>
+				<td>Format</td>
+				<td>New Record inserted</td>
+			</tr>													
+		</table>
+	</div>
+</div>
+

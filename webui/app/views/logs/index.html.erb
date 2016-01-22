@@ -1,0 +1,92 @@
+<h2 style="border-bottom:1px solid #000000">System Logs</h2>
+
+<ul class="nav nav-left nav-pills nav-pills-xs">
+    <li class="active">
+        <a data-toggle="tab" href="#tab_1">Instances</a>
+    </li>
+    <li>
+        <a data-toggle="tab" href="#tab_2">Users</a>
+    </li>
+    <li>
+        <a data-toggle="tab" href="#tab_3">Mappings</a>
+    </li>                
+</ul>
+
+<div class="tab-content">
+	<div id="tab_1" class="tab-pane active table-container" style="margin:5px 0px;padding:0px">
+		<% if @instancelogs.size <=0 %>
+		<h3> No Instance logs found</h3>
+		<%else%>
+		<table class="table table-striped table-bordered table-condensed table-hover" data-role="datagrid" style="margin-top:5px;">
+			<tr><th class="col-md-2">Timestamp</th><th>Name</th><th class="col-md-9">Log</th></tr>
+			
+			<% @instancelogs.each do |log|%>
+			<% if log.instance.nil? %>
+			<tr>
+				<td><%=log.createddate.to_s%></td>
+				<td>Unknown Instance (<%=log.whoid%>)</td>
+				<td><%=log.logdata%></td>
+			</tr>	
+			<%else%>
+			<tr>
+				<td><%=log.createddate.to_s%></td>
+				<td><%=log.instance.name%></td>
+				<td><%=log.logdata%></td>
+			</tr>
+			<%end%>	
+			<%end%>						
+		</table>
+		<%end%>
+				
+	</div>
+	<div id="tab_2" class="col-md-10 tab-pane table-container table-responsive" style="margin:5px 0px;padding:0px">
+		<% if @userlogs.size <=0 %>
+		<h3> No User logs found</h3>
+		<%else%>
+		<table class="table table-striped table-bordered table-condensed table-hover" data-role="datagrid" style="margin-top:5px;">
+			<tr><th>Timestamp</th><th>Name</th><th class="col-md-7">Log</th></tr>
+			<% @userlogs.each do |log|%>
+			<% if log.user.nil? %>
+			<tr>
+				<td><%=log.createddate.to_s%></td>
+				<td>Unknown User (<%=log.whoid%>)</td>
+				<td><%=log.logdata%></td>
+			</tr>	
+			<%else%>
+			<tr>
+				<td><%=log.createddate.to_s%></td>
+				<td><%=log.user.username%></td>
+				<td><%=log.logdata%></td>
+			</tr>
+			<%end%>	
+			<%end%>						
+		</table>
+		<%end%>
+		
+	</div>
+	<div id="tab_3" class="tab-pane table-container" style="margin:5px 0px;padding:0px">
+		<% if @mappinglogs.size <=0 %>
+		<h3> No Mapping logs found</h3>
+		<%else%>
+		<table class="table table-striped table-bordered table-condensed table-hover" data-role="datagrid" style="margin-top:5px;">
+			<tr><th>Timestamp</th><th>Name</th><th class="col-md-7">Log</th></tr>
+			<% @mappinglogs.each do |log|%>
+			<% if log.mapping.nil? %>
+			<tr>
+				<td><%=log.createddate.to_s%></td>
+				<td>Unknown Instance (<%=log.whoid%>)</td>
+				<td><%=log.logdata%></td>
+			</tr>	
+			<%else%>
+			<tr>
+				<td><%=log.createddate.to_s%></td>
+				<td><%=log.mapping.name%></td>
+				<td><%=log.logdata%></td>
+			</tr>	
+			<%end%>
+			<%end%>						
+		</table>
+		<%end%>
+	</div>
+</div>
+

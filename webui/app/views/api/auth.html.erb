@@ -1,0 +1,22 @@
+<style>
+    .phelement{
+		font-size:12px;
+		font-family:"courier";
+	}
+	div.phelement{
+		margin:10px;
+	}
+	div.phelement label{
+		background-color:rgb(7, 105, 173);
+		text-align:center;
+		padding:5px;
+		color:#fff;
+	}
+</style>
+<form class="phelement" method="post" action="<%=url%>" data-target="ph:auth">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+  <div class="phelement"><label>Phalitha User Authentication</label></div>
+  <div class="phelement"><input type="text" name="inuser" placeholder="User Name"/></div>
+  <div class="phelement"><input type="password" name="inpassword" placeholder="Password"/></div>
+  <div class="phelement"><button type="submit">Login</button>&nbsp;&nbsp;<button type="button" data-dismiss="modal">Cancel</button></div>
+</form>

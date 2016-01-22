@@ -1,0 +1,66 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 style="border-bottom:1px solid #000"> Create New Instance </h1>
+			<%= form_for @instance, url: {action:"create"}, html: {id:"frmCreateInstance", class:"form-horizontal", role:"form", remote:true} do |f| %>
+			<div class="form-group">
+                <div class="col-sm-2">
+                	&nbsp;
+                </div>
+                <div class="col-sm-4">
+                  <label class="control-label">All fields are required</label>		
+                </div>
+              </div>
+			
+			<div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inName" class="control-label">Instance Name</label>
+                </div>
+                <div class="col-sm-4">
+                  <%= f.text_field :name, class:"form-control", placeholder:"Only Alphabets, Numbers are allowed" %>	
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-2">
+                  <label for="inDescription" class="control-label">Description</label>
+                </div>
+                <div class="col-sm-4">
+                  <%= f.text_area  :description, class:"form-control", placeholder:"Only 1000 Charecters" %>
+                </div>
+              </div> 
+             <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <%= submit_tag "Create", class: "btn btn-default btn-primary" , data: { disable_with: "Please wait..." , confirm: "Are you sure?"} %>
+                </div>
+              </div>
+            <!-- </form> -->
+			<% end %>
+		</div>
+	</div>
+</div>
+
+
+<script>
+$("#frmCreateInstance").on("ajax:success",function(e,data,status,xhr){
+	//output=$.parseJSON(data.responseText);
+	if(data['rc']==0){
+		window.location.replace(data['redirect']);
+	}
+	else if(data['rc']==1){
+		html="<ul id='frmCreateInstance_errors'>";
+		$("#frmCreateInstance .form_errors").removeClass("form_errors");
+		$.each(data['errors'],function(field,message){
+			$("#frmCreateInstance *[name*='"+field+"']").first().addClass("form_errors");
+			// $(obj).css({"border-color": "#FF0000", 
+	             // "border-width":"1px", 
+	             // "border-style":"solid"});
+			html+="<li class='text-danger'>"+field+" "+message+"</li>";
+		});
+		html+="</ul>";
+		
+		$("#frmCreateInstance_errors").remove();
+		$("#frmCreateInstance").prepend(html);
+	}
+}).on("ajax:error",function(e,data,status,xhr){
+});
+</script>

@@ -1,0 +1,16 @@
+<div class="container table-container" style="margin:0px">
+	<h1 style="border-bottom:1px solid #000"> Instances </h1>
+	<a data-no-turbolink="true" type="button" class="btn btn-success" href="<%=new_instance_path%>">New Instance</a>
+	<table class="table table-striped table-bordered table-condensed table-hover" data-role="datagrid" style="margin-top:5px;">
+		<tr><th>Instance</th><th class="col-md-9">Description</th><th>&nbsp;</th></tr>
+		<% @instances.find_each do |i| %>
+		<tr>
+			<td><%= link_to i.name, instance_path(i) %></td>
+			<td><%=i.description%></td>
+			<td>
+				  <a href="<%=logs_instances_url(:id => i)%>" class="btn btn-sm btn-default">Logs</button>
+			</td>
+		</tr>
+		<% end %>
+	</table>
+</div>

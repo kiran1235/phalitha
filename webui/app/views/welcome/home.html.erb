@@ -1,0 +1,5 @@
+<h1>File Upload</h1>
+<%= form_tag('/upload', multipart: true) do %>
+<p><label for="upload_file">Select File</label>:<%= file_field_tag 'datafile' %></p>
+<%= submit_tag "Upload" %>
+<%end %>

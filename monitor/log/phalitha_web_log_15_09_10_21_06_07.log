@@ -1,0 +1,11 @@
+== Sinatra (v1.4.6) has taken the stage on 3001 for development with backup from Thin
+192.168.56.2 - - [10/Sep/2015:21:12:02 +0000] "GET /watch?map=178 HTTP/1.1" 200 86 0.0769
+192.168.56.2 - - [10/Sep/2015:21:12:03 +0000] "GET /favicon.ico HTTP/1.1" 404 477 0.0024
+/apps/phalitha/monitor/monitor.rb:18: warning: already initialized constant DB_CONFIG
+monitor.rb:17: warning: previous definition of DB_CONFIG was here
+192.168.56.2 - - [10/Sep/2015:21:17:13 +0000] "GET /watch?map=178 HTTP/1.1" 200 55 0.1107
+/apps/phalitha/monitor/monitor.rb:18: warning: already initialized constant DB_CONFIG
+/apps/phalitha/monitor/monitor.rb:18: warning: previous definition of DB_CONFIG was here
+192.168.56.2 - - [10/Sep/2015:21:17:40 +0000] "GET /watch?map=178 HTTP/1.1" 200 55 0.1063
+192.168.56.2 - - [10/Sep/2015:21:19:04 +0000] "GET /watch?map=177 HTTP/1.1" 200 55 0.0055
+192.168.56.2 - - [10/Sep/2015:21:19:06 +0000] "GET /watch?map=177 HTTP/1.1" 200 55 0.0062

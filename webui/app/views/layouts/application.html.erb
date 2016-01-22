@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phalitham</title>
+  <% #stylesheet_link_tag 'application', 'http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css' %> 
+  <%= stylesheet_link_tag 'reset.min.css' %> 
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'sidebar.css' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= yield :javascripts %>
+  <%= csrf_meta_tags %>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style type="text/css">
+.hide{
+	display:none;
+}
+.box-group > *{
+	padding:5px;
+	background-color:#d1d1d1;
+	cursor:pointer;
+}
+.box-group > .active{
+	background-color:#f1f1f1;
+}
+.form_errors{
+	
+	border-color: #FF0000 !important;
+    border-width:1px !important;
+    border-style:solid !important
+}
+
+.xmltree, .xmltreeeditor{
+	margin:0px 2px;padding:0px;
+	cursor:pointer;
+	
+}
+.xmltree h4, .xmltreeeditor h4{
+	margin:0px;padding:8px;
+	background-color:#D1D1D1;
+	text-align:center;
+	
+}
+
+.xmltree span{
+   -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;	
+}
+
+.xmltree .bullet{
+	
+	background:url(<%= image_url('bulletpoint.png') %>) no-repeat left center;
+	padding-left:18px;
+	
+	
+}
+
+.xmltree .plus{
+	
+	background:url(<%= image_url('plus_16.png') %>) no-repeat left center;
+	padding-left:18px;
+	
+	
+}
+
+.xmltree .minus{
+	background:url(<%= image_url('minus-black.png') %>) no-repeat left center;
+	padding-left:18px;
+	
+}
+
+.xmltree span{
+	
+}
+
+.xmltree .plus, .xmltree .minus, .xmltree .bullet{
+	font-size:14pt;
+	
+}
+.xmltree ul{
+	padding-left:5px;
+}
+.xmltree ul li{
+	margin-left:10px;
+}
+
+.xmltree ul ul{
+	margin-left:10px;
+}
+.xmltree ul ol{
+	margin-left: 10px;
+}
+
+.xmltree ul ol ul{
+	margin-left: -5px;
+}
+
+.sensitivty-text-color-1{
+	
+}
+.sensitivty-text-color-2,.sensitivty-text-color-3{
+	color:blue;
+}
+
+.sensitivty-text-color-4, .sensitivty-text-color-5{
+	color:red;
+}
+
+select:disabled, input[type="text"]:disabled {
+    border-color:red
+}
+
+.datagrid button:disabled{
+	visibility:hidden;
+}
+
+</style>  
+</head>
+<body>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                	<a class="navbar-brand" href="#"><span>Phalitha</span></a>
+                </div>
+                <% if session[:is_user_validated]%>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                    	<%= link_to "Signout", url_for(controller: 'welcome',action: 'logout', only_path: true), :"data-no-turbolink" => true %>
+                    </li>
+                </ul>
+                <%end%>
+            </div>
+        </div>
+    <div id="wrapper" class="section" style="margin-top:52px;">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="/instances/new">
+                        Create New Instance 
+                    </a>
+                </li>
+                <li>
+                    <a href="/instances/">Instances</a>
+                </li>
+                <li>
+                    <a href="/logs/">Logs</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+						<div class="container">
+							    <% 
+							    flash.each do |name, msg| 
+						    		if name == "warn" then
+						    	-%>
+							    	<div class="row" style="margin-top:10px">
+							    		<div class="alert alert-warning alert-dismissible fade in" role="alert">
+							    			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+							    		<%= msg %>
+							    	</div>
+							    	</div>
+						    	<%
+						    		elsif name == "notice" || name == "info" 
+						    	-%>
+							    	<div class="row" style="margin-top:10px">
+							    		<div class="alert alert-primary alert-dismissible fade in" role="alert">
+							    			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+							    		<%= msg %>
+							    	</div>
+							    	</div>
+						    	<%
+						    		elsif name == "error" 
+						    	-%>
+							    	<div class="row" style="margin-top:10px">
+							    		<div class="alert alert-danger alert-dismissible fade in" role="alert">
+							    			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+							    		<%= msg %>
+							    	</div>
+							    	</div>
+						    	<%
+						    		end
+							    end 
+							    -%>
+						</div>
+                    </div>
+                </div>
+                <div class="row">
+                	<div class="col-md-12">
+		                <%= yield %>
+                	</div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+   <!-- Modal -->
+  <div id="dynamic_modal_box" class="modal" role="dialog">
+	<div class="modal-dialog modal-sm">
+	  <div class="modal-content">
+	    <div class="modal-header">
+	      <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      <h4 class="modal-title">Message</h4>
+	    </div>
+	    <div class="modal-body"></div>
+	    <div class="modal-footer">
+	      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	    </div>
+	  </div>
+	</div>
+  </div>    
+</body>
+</html>

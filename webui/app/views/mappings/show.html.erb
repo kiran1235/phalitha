@@ -1,0 +1,283 @@
+<% content_for :javascripts do %>
+  <%= javascript_include_tag 'mapping.js', 'data-turbolinks-track' => false %>
+<% end %>
+
+<h1 style="border-bottom:1px solid #000">Mapping (<%=@mapping.name%>) <small> in Instance(<%=@instance.name%>)</small> </h1>
+<div class="row">
+	<div class="col-sm-12 box-group">
+		<h3 class="col-sm-2 <%=(@pagesection==1)? 'active' : 'text-muted' %>" data-role='box-group-item' data-target="#frmSetupMapping"> 1. Setup </h3>
+		<h3 class="col-sm-2 <%=(@pagesection==2)? 'active' : 'text-muted' %>" data-role='box-group-item' data-target="#frmImportContainer"> 2. Fields </h3>
+		<h3 class="col-sm-2 <%=(@pagesection==3)? 'active' : 'text-muted' %>" data-role='box-group-item' data-target="#frmPermissionMapping"> 3. Permissions </h3>
+		<h3 class="col-sm-2 <%=(@pagesection==4)? 'active' : 'text-muted' %>" data-role='box-group-item' data-target="#frmMonitorMapping"> 4. Collector Activity </h3> 	
+	</div>
+</div>
+<%= form_for @mapping, url: {action:"create", format: :json}, html: {id:"frmSetupMapping", class:"form-horizontal", role:"form", remote:true} do |f| %>
+  <div class="form-group">
+    <div class="col-sm-2">
+    	&nbsp;
+    </div>
+    <div class="col-sm-4">
+      <label class="control-label">All fields are required</label>		
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-2">
+      <label for="inName" class="control-label">Name</label>
+    </div>
+    <div class="col-sm-4">
+      <%= f.text_field :name, class:"form-control", placeholder:"Only Alphabets, Numbers are allowed" %>	
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-2">
+      <label for="inDescription" class="control-label">Description</label>
+    </div>
+    <div class="col-sm-4">
+      <%= f.text_area  :description, class:"form-control", placeholder:"Only 1000 Charecters" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-2">
+      <label for="inFormat" class="control-label">Input Source Type</label>
+    </div>
+    <div class="col-sm-4">
+    	<label for="inFormat" class="control-label"><%=@mapping[:sourcetype]%></label>
+    </div>
+  </div>  
+  
+  <%if @mapping[:sourcetype].eql?"xml"%>
+  
+  <div>
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Source File Location</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :sourcefilepath, class:"form-control", placeholder:"Valid file path" %>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Target File Location</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :targetfilepath, class:"form-control", placeholder:"Valid file path" %>
+	    </div>
+	  </div>	  
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">File name</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :sourcefilename, class:"form-control", placeholder:"Valid file name with alphbets and numeric letters" %>
+	    </div>
+	  </div>
+  </div>  
+  <%elsif @mapping[:sourcetype].eql?"database"%>
+  <div>
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Database Hostname</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :hostname, class:"form-control", placeholder:"Hostname" %>
+	    </div>
+	    <div class="col-sm-2">
+	    	<%= f.text_field :portno, class:"form-control", placeholder:"Port number" %>
+	    </div>	    
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Encoding</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :encoding, class:"form-control", placeholder:"utf-8" %>
+	    </div>
+	  </div>	  	  	  
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Database</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :databasename, class:"form-control", placeholder:"Database" %>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Username</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :username, class:"form-control", placeholder:"User with read/write access" %>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Password</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :accesscode, class:"form-control", placeholder:"Password" %>
+	    </div>
+	  </div>  
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Source Table</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :sourcename, class:"form-control", placeholder:"[Schema.]<Tablename>" %>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-2">
+	      <label for="inFormat" class="control-label">Target Table</label>
+	    </div>
+	    <div class="col-sm-4">
+	    	<%= f.text_field :targetname, class:"form-control", placeholder:"[Schema.]<Tablename>" %>
+	    </div>
+	  </div>
+  </div>
+   <%end%>     
+ <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= submit_tag "Update", class: "btn btn-default btn-primary" , data: { disable_with: "Please wait..." , confirm: "Are you sure?"} %>
+    </div>
+  </div>
+<% end %>
+
+<div id="frmImportContainer">
+<% if @mapping.sourcetype.eql?"xml" %>
+<div id="frmXMLImportIframeContainer" class="embed-responsive embed-responsive-16by9">
+<div>
+	<% if @fields.size <=0%>
+	<div id="frmImportSourceContainer">
+		<div>
+			<form id="frmImportSource" action="<%=instance_mapping_fields_import_path(@instance,@mapping)%>" enctype="multipart/form-data" method="post">
+				<h3 class="text-primary s1">1. Import Source <button type="button" class="btn btn-primary" onclick="beginImport()"> Import </button></h2>
+				<%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+				<input id="frmImportSource_file" name="datafile" type="file" class="hide"  data-icon="false" data-buttonText="Browse.." accept="xml" onchange="validateImportedFile(this);">
+			</form>
+		</div>
+		<h3 class="text-muted s2">2. Uploading Source </h2>
+		<h3 class="text-muted s3">3. Validating Source </h2>
+		<h3 class="text-muted s4">4. Creating Source Structure</h2>
+	</div>
+	<%else%>
+	<h4 class="text-muted">Warning: Change in configuration remove all user permissions</h4>
+	<form method="post" action="<%=instance_mapping_fields_update_path(@instance.id,@mapping.id)%>" id="tblim_<%="#{@instance.id}_#{@mapping.id}"%>" class="datagrid table-container" style="margin:0px">
+		<%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+		<input type="hidden" name="_method" value="put">		
+		<h3 style="border-bottom:1px solid #000"> XML Fields</h3>
+		<button type="button" class="btn btn-primary" onclick="beginImport()"> Import </button>
+		<a class="small btn btn-danger" href="javascript:window.App.datagrid.toggle('#tblim_<%="#{@instance.id}_#{@mapping.id}"%>')" >Edit</a>
+		
+		<table  class="table table-striped table-bordered table-condensed table-hover" data-role="datagrid" style="margin-top:5px;">
+			<tr><th>Field</th><th class="col-md-7">XML Path</th><th>Sensitive</th></tr>
+			<% @fields.each do |field| %>
+			<tr class="text-left sensitivty-text-color-<%=field.sensitivity%>">
+				<td><%= field[:fieldname] %></td>
+				<td><%= field[:searchpath] %></td>
+				<%if field[:isparent]%>
+				<td>&nbsp;</td>
+				<%else%>
+				<td>
+					<input type="hidden" name="id[]" value="<%=field.id%>">
+					
+					<select name="sensitivity[]" disabled data-role="datagrid-edit-item">
+						<%
+							#i=0
+							field.sensitivity_values.each_with_index do |v,i|
+							if field.sensitivity_text == v
+						%>
+							<option value=<%=i%> selected><%=v%></option>
+						<%
+							elsif field.sensitivity.to_i <= i
+						%>
+							<option value=<%=i%>><%=v%></option>
+						<%
+							end
+							#i=i+1
+							end
+						%>
+					</select>
+				</td>
+				<%end%>
+			</tr>
+			<% end %>
+		</table>
+		
+		
+      	<button type="submit" class="btn btn-default btn-primary"  data-role='datagrid-edit-item' disabled>Update</button>
+	</form>
+	<div id="frmImportSourceContainer">
+		<div>
+			<form id="frmImportSource" action="<%=instance_mapping_fields_import_path(@instance,@mapping)%>" enctype="multipart/form-data" method="post">
+				<%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+				<input id="frmImportSource_file" name="datafile" type="file" class="hide"  data-icon="false" data-buttonText="Browse.." accept="xml" onchange="validateImportedFile(this);">
+			</form>
+		</div>
+	</div>	
+	<%end%>
+</div>
+</div>
+<% end %>
+
+</div>
+
+<div id="frmPermissionMapping">
+	<% if @mapping_users.size <=0 %>
+	<h3 class="text-danger text-center">No Mapping Users Found</h3>
+	<% else %>
+	<div class="table-container" style="margin:0px">
+		
+			<h3 style="border-bottom:1px solid #000"> Mapping Users </h3>
+			<a class="small btn btn-sm btn-primary" href="#" data-target="<%=instance_mapping_new_user_path(@instance,@mapping)%>" data-role="modal" modal-type="if" modal-size="sm" modal-title="Add Mapping User" >Add User</a>
+			<a class="small btn btn-sm btn-danger" href="#" data-target="<%=instance_mapping_delete_user_path(@instance,@mapping)%>" data-role="modal" modal-type="if" modal-size="sm" modal-title="Delete Mapping User" >Delete User</a>
+			<table id="tblimu_<%="#{@instance.id}_#{@mapping.id}"%>" class="table table-striped table-bordered table-condensed table-hover" data-role="datagrid" style="margin-top:5px;">
+				<tr><th>User</th><th>Username</th></tr>
+				<% @mapping_users.each do |mapping_user| %>
+				<tr><td><%=mapping_user[:name]%></td><td><%=mapping_user[:username]%></td></tr>
+				<%end%>
+			</table>
+	</div>	
+	<% end %>
+	<% if @fields.size >=1%>
+	<div class="table-container" style="margin:0px">
+		<% @fields.each do |field|
+			if field.sensitivity.to_i >= 1
+		%>
+			<h3 style="border-bottom:1px solid #000"> <%=field[:searchpath]%> (Access code: <%=field[:accesscode]%>)</h3>
+			<a class="small btn btn-sm btn-primary" href="#" data-target="<%=instance_mapping_fields_new_user_path(@instance,@mapping,field)%>" data-role="modal" modal-type="if" modal-size="sm" modal-title="Add Field User" >Add User</a>
+			<a class="small btn btn-sm btn-danger" href="#" data-target="<%=instance_mapping_fields_delete_user_path(@instance,@mapping,field)%>" data-role="modal" modal-type="if" modal-size="sm" modal-title="Delete Field User" >Delete User</a>
+			<table id="tblimd_<%="#{@instance.id}_#{@mapping.id}_#{field[:id]}"%>" class="table table-striped table-bordered table-condensed table-hover" data-role="datagrid" style="margin-top:5px;">
+				<tr><th>User</th><th>Username</th></tr>
+			
+			<%
+				@field_users["#{field[:id]}"].each do |field_user|
+			%>
+				<tr><td><%=field_user[:name]%></td><td><%=field_user[:username]%></td></tr>
+				
+		<%
+				end
+		%>
+			</table>
+		<%
+			end
+		   end 
+		%>
+	</div>
+	<%end%>
+</div>
+
+<div id="frmMonitorMapping">
+	<% if @mapping[:iswatching].nil? %>
+		<h4>Mapping is not running</h4>
+		<form id="frmImportSource" action="/" method="post" remote="true">
+			<button type="submit" class="btn btn-default btn-primary" >Start</button>
+		</form>
+	<%else%>
+		<h4>Mapping is running</h4>
+		<form id="frmImportSource" action="/" method="post" remote="true">
+			<button type="submit" class="btn btn-default btn-primary" >Stop</button>
+		</form>
+	<%end%>
+</div>
+

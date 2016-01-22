@@ -1,0 +1,26 @@
+<form class="form-horizontal" role="form" accept-charset="UTF-8" action="<%=instance_mapping_remove_user_path(@instance[:id],@mapping[:id])%>" method="post" data-remote="true" id="frmDelUsers" style="margin-left:5px;">
+	<%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+	<% @mapping_users.each do |mapping_user|%>
+	  <div class="form-group">
+	    <div class="checkbox">
+	    	<label><%= check_box_tag "user_selected[]", value="#{mapping_user[:id]}"%><%=mapping_user[:name]%>(<%=mapping_user[:username]%>)</label>
+	    </div>
+	  </div>	
+	<% end %>
+	<div class="form-group">
+		<button type="button" class="btn btn-sm btn-success" onclick="submitform('#frmDelUsers')">
+			submit			
+		</button>
+	</div>
+</form>
+<script>
+function submitform(id){
+	$(id).on("ajax:success",function(e,data,status,xhr){
+		if(data['rc']==0){
+			window.parent.location.reload();
+		}
+	}).on("ajax:error",function(e,data,status,xhr){
+		alert("oops! something is wrong")
+	}).submit();
+}
+</script>

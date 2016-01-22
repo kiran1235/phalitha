@@ -1,0 +1,411 @@
+# Logfile created on 2015-08-27 03:43:53 +0000 by logger.rb/47272
+I, [2015-08-27T03:43:53.810029 #2320]  INFO -- : watching for files like ^.*\.xml$
+I, [2015-08-27T03:45:34.189659 #2329]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/
+I, [2015-08-27T03:47:45.673659 #2335]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/
+I, [2015-08-27T03:49:26.603534 #2343]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/
+I, [2015-08-27T03:49:31.559472 #2343]  INFO -- : event received
+I, [2015-08-27T03:49:31.559744 #2343]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera
+I, [2015-08-27T03:49:31.561402 #2343]  INFO -- : event received
+I, [2015-08-27T03:49:31.561550 #2343]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera
+I, [2015-08-27T03:49:31.561924 #2343]  INFO -- : event received
+I, [2015-08-27T03:49:31.562044 #2343]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera
+I, [2015-08-27T03:50:30.581665 #2368]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/
+I, [2015-08-27T03:51:29.770255 #2368]  INFO -- : event received
+I, [2015-08-27T03:51:29.770481 #2368]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera
+I, [2015-08-27T03:51:29.771550 #2368]  INFO -- : event received
+I, [2015-08-27T03:51:29.771672 #2368]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera
+I, [2015-08-27T03:51:29.773000 #2368]  INFO -- : event received
+I, [2015-08-27T03:51:29.773471 #2368]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera
+I, [2015-08-27T03:59:01.511701 #2422]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/
+I, [2015-08-27T04:00:54.748624 #2445]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/
+I, [2015-08-27T04:03:46.427032 #2469]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/
+I, [2015-08-27T04:06:09.088380 #2496]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/
+I, [2015-08-27T04:08:00.211618 #2523]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/
+I, [2015-08-27T04:10:23.392801 #2523]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera
+I, [2015-08-27T04:10:23.394195 #2523]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera
+I, [2015-08-27T04:10:23.394370 #2523]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera
+I, [2015-08-27T04:12:10.515430 #2523]  INFO -- : /tmp/inbound/ is ignored due to matching critera
+I, [2015-08-27T04:12:10.517055 #2523]  INFO -- : /tmp/inbound/ is ignored due to matching critera
+I, [2015-08-27T04:12:12.152779 #2523]  INFO -- : /tmp/inbound/ is ignored due to matching critera
+I, [2015-08-27T04:12:12.154300 #2523]  INFO -- : /tmp/inbound/ is ignored due to matching critera
+I, [2015-08-27T06:57:41.431063 #3253]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T06:58:50.473548 #3253]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T06:58:50.475080 #3253]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T06:58:50.475623 #3253]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:01:51.713717 #3445]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:01:58.659701 #3445]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:01:58.661104 #3445]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:01:58.661296 #3445]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:01:58.861919 #3445]  INFO -- : Job
+I, [2015-08-27T07:03:33.275188 #3449]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:03:38.601439 #3449]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:03:38.601936 #3449]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:03:38.602258 #3449]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:03:38.803752 #3449]  INFO -- : Job
+I, [2015-08-27T07:04:32.672912 #3453]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:04:36.486494 #3453]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:04:36.486856 #3453]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:04:36.487018 #3453]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:04:36.687676 #3453]  INFO -- : Job
+I, [2015-08-27T07:16:55.414340 #3559]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:17:01.456055 #3559]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:17:01.456473 #3559]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:17:01.456632 #3559]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:23:36.909383 #3565]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:23:43.128090 #3565]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:23:43.128344 #3565]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:23:43.128552 #3565]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:24:10.329258 #3571]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:24:16.488107 #3571]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:24:16.488530 #3571]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:24:16.489389 #3571]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:25:11.104364 #3577]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:25:15.077461 #3577]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:25:15.077931 #3577]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:25:15.078243 #3577]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:25:15.279127 #3577]  INFO -- : start job
+I, [2015-08-27T07:26:14.157378 #3584]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:26:18.285779 #3584]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:26:18.285974 #3584]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:26:18.286134 #3584]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:26:18.486875 #3584]  INFO -- : start job
+I, [2015-08-27T07:26:57.955499 #3590]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:27:01.483105 #3590]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:27:01.483459 #3590]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:27:01.483571 #3590]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:27:01.684923 #3590]  INFO -- : start job
+I, [2015-08-27T07:27:01.684976 #3590]  INFO -- : Processing Job started
+I, [2015-08-27T07:28:33.553217 #3598]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:28:38.154396 #3598]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:28:38.154919 #3598]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:28:38.155060 #3598]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:28:38.355808 #3598]  INFO -- : start job
+I, [2015-08-27T07:28:38.355966 #3598]  INFO -- : Processing Job started (0)
+I, [2015-08-27T07:42:59.516489 #3607]  INFO -- : start job
+E, [2015-08-27T07:42:59.516552 #3607] ERROR -- : unable to start job
+I, [2015-08-27T07:42:59.534649 #3607]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:43:05.433497 #3607]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:45:48.011903 #3612]  INFO -- : start job
+E, [2015-08-27T07:45:48.012098 #3612] ERROR -- : unable to start job undefined local variable or method `eventqueue' for #<PhalithaMonitorJob:0xa2bbee8>
+E, [2015-08-27T07:45:48.012138 #3612] ERROR -- : ["monitor.rb:31:in `run'", "monitor.rb:119:in `block in run'"]
+I, [2015-08-27T07:45:48.030149 #3612]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:45:51.449084 #3612]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:45:51.450115 #3612]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:45:51.450424 #3612]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:46:59.976962 #3617]  INFO -- : start job
+I, [2015-08-27T07:46:59.993357 #3617]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:47:02.880585 #3617]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:47:02.880927 #3617]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:47:02.881057 #3617]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:47:02.979462 #3617]  INFO -- : Processing Job file:({"177"=>"/tmp/inbound/abc.xml"})
+I, [2015-08-27T07:47:02.979731 #3617]  INFO -- : Processing Job file:({"177"=>"/tmp/inbound/abc.xml"})
+I, [2015-08-27T07:47:02.979942 #3617]  INFO -- : Processing Job file:({"177"=>"/tmp/inbound/abc.xml"})
+I, [2015-08-27T07:49:33.203830 #3624]  INFO -- : start job
+I, [2015-08-27T07:49:33.223706 #3624]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+E, [2015-08-27T07:54:39.662418 #3637] ERROR -- : starting job 
+E, [2015-08-27T07:54:39.662511 #3637] ERROR -- : starting monitoring 
+I, [2015-08-27T07:54:39.679009 #3637]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T07:54:43.159537 #3637]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:54:43.159867 #3637]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:54:43.159999 #3637]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:54:43.663375 #3637]  INFO -- : Processing Job file:({"177"=>"/tmp/inbound/abc.xml"})
+I, [2015-08-27T07:54:43.663620 #3637]  INFO -- : Processing Job file:({"177"=>"/tmp/inbound/abc.xml"})
+I, [2015-08-27T07:54:43.663738 #3637]  INFO -- : Processing Job file:({"177"=>"/tmp/inbound/abc.xml"})
+I, [2015-08-27T07:55:05.999306 #3637]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:55:05.999555 #3637]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:55:05.999805 #3637]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T07:55:06.676964 #3637]  INFO -- : Processing Job file:({"177"=>"/tmp/inbound/abc.xml"})
+I, [2015-08-27T07:55:06.677267 #3637]  INFO -- : Processing Job file:({"177"=>"/tmp/inbound/abc.xml"})
+I, [2015-08-27T07:55:06.677385 #3637]  INFO -- : Processing Job file:({"177"=>"/tmp/inbound/abc.xml"})
+E, [2015-08-27T08:01:11.208791 #3645] ERROR -- : starting job 
+E, [2015-08-27T08:01:11.210145 #3645] ERROR -- : starting monitoring 
+I, [2015-08-27T08:01:11.226376 #3645]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T08:01:15.046846 #3645]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:01:15.048028 #3645]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:01:15.048701 #3645]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:01:15.209834 #3645]  INFO -- : Processing Job file:({"177"=>"/tmp/inbound/abc.xml"})
+I, [2015-08-27T08:01:15.210079 #3645]  INFO -- : Processing Job file:({"177"=>"/tmp/inbound/abc.xml"})
+I, [2015-08-27T08:01:15.210209 #3645]  INFO -- : Processing Job file:({"177"=>"/tmp/inbound/abc.xml"})
+E, [2015-08-27T08:06:28.456311 #3651] ERROR -- : starting job 
+E, [2015-08-27T08:06:28.456404 #3651] ERROR -- : starting monitoring 
+I, [2015-08-27T08:06:28.472922 #3651]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T08:06:30.961307 #3651]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:06:31.458829 #3651]  INFO -- : Processing Job file:({"177"=>"/tmp/inbound/abc.xml"})
+I, [2015-08-27T08:11:30.897974 #3664]  INFO -- : starting job 
+I, [2015-08-27T08:11:30.899954 #3664]  INFO -- : starting monitoring 
+I, [2015-08-27T08:11:30.916237 #3664]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T08:11:38.402365 #3664]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:11:38.402562 #3664]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:11:38.402704 #3664]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:11:38.901688 #3664]  INFO -- : Processing Job file:()
+I, [2015-08-27T08:12:24.926819 #3669]  INFO -- : starting job 
+I, [2015-08-27T08:12:24.926912 #3669]  INFO -- : starting monitoring 
+I, [2015-08-27T08:12:24.943601 #3669]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T08:12:28.209990 #3669]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:12:28.210312 #3669]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:12:28.210365 #3669]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:12:28.927871 #3669]  INFO -- : Processing Job file:(/tmp/inbound/abc.xml)
+I, [2015-08-27T08:12:43.666029 #3669]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:12:43.666446 #3669]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:12:43.666580 #3669]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:12:43.933975 #3669]  INFO -- : Processing Job file:(/tmp/inbound/abc.xml)
+I, [2015-08-27T08:12:57.048770 #3669]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:12:57.944223 #3669]  INFO -- : Processing Job file:(/tmp/inbound/abc.xml)
+I, [2015-08-27T08:15:52.465487 #3678]  INFO -- : starting job 
+I, [2015-08-27T08:15:52.467660 #3678]  INFO -- : starting monitoring 
+I, [2015-08-27T08:15:52.484159 #3678]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T08:15:57.249591 #3678]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:15:57.250721 #3678]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:15:57.469383 #3678]  INFO -- : Processing Job file:(/tmp/inbound/abc.xml)
+I, [2015-08-27T08:16:38.874622 #3678]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:16:38.875705 #3678]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:16:39.491738 #3678]  INFO -- : Processing Job file:(/tmp/inbound/abc.xml)
+I, [2015-08-27T08:17:50.074876 #3687]  INFO -- : starting job 
+I, [2015-08-27T08:17:50.074972 #3687]  INFO -- : starting monitoring 
+I, [2015-08-27T08:17:50.091464 #3687]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T08:18:01.403734 #3687]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:18:02.081630 #3687]  INFO -- : Processing Job file:(/tmp/inbound/abc.xml)
+I, [2015-08-27T08:19:44.475834 #3687]  INFO -- : /tmp/inbound/test.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:19:44.476492 #3687]  INFO -- : /tmp/inbound/test.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:19:45.117097 #3687]  INFO -- : Processing Job file:(/tmp/inbound/test.xml)
+I, [2015-08-27T08:20:12.874898 #3696]  INFO -- : starting job 
+I, [2015-08-27T08:20:12.876586 #3696]  INFO -- : starting monitoring 
+I, [2015-08-27T08:20:12.893315 #3696]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T08:20:22.348018 #3696]  INFO -- : /tmp/inbound/test.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:20:22.879530 #3696]  INFO -- : Processing Job file:(/tmp/inbound/test.xml)
+I, [2015-08-27T08:20:31.906887 #3696]  INFO -- : /tmp/inbound/abcd.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:20:31.907879 #3696]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:20:32.882673 #3696]  INFO -- : Processing Job file:(/tmp/inbound/abcd.xml)
+I, [2015-08-27T08:24:05.452412 #3703]  INFO -- : starting job 
+I, [2015-08-27T08:24:05.454918 #3703]  INFO -- : starting monitoring 
+I, [2015-08-27T08:24:05.472116 #3703]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T08:24:24.737991 #3707]  INFO -- : starting job 
+E, [2015-08-27T08:24:24.738091 #3707] ERROR -- : unable to start job eventmachine not initialized: evma_install_oneshot_timer
+E, [2015-08-27T08:24:24.738130 #3707] ERROR -- : ["/usr/local/rvm/gems/ruby-2.2.1/gems/eventmachine-1.0.8/lib/eventmachine.rb:331:in `add_oneshot_timer'", "/usr/local/rvm/gems/ruby-2.2.1/gems/eventmachine-1.0.8/lib/eventmachine.rb:331:in `add_timer'", "monitor.rb:45:in `run'", "monitor.rb:130:in `block (2 levels) in run'"]
+I, [2015-08-27T08:24:24.740987 #3707]  INFO -- : starting monitoring 
+I, [2015-08-27T08:24:24.758763 #3707]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T08:25:03.330639 #3707]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:25:03.332054 #3707]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:25:03.332474 #3707]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:25:16.649750 #3707]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:25:16.650146 #3707]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:32:12.608021 #3719]  INFO -- : starting job 
+E, [2015-08-27T08:32:12.608135 #3719] ERROR -- : unable to start job eventmachine not initialized: evma_install_oneshot_timer
+E, [2015-08-27T08:32:12.608285 #3719] ERROR -- : ["/usr/local/rvm/gems/ruby-2.2.1/gems/eventmachine-1.0.8/lib/eventmachine.rb:331:in `add_oneshot_timer'", "/usr/local/rvm/gems/ruby-2.2.1/gems/eventmachine-1.0.8/lib/eventmachine.rb:331:in `add_timer'", "/usr/local/rvm/gems/ruby-2.2.1/gems/eventmachine-1.0.8/lib/em/timers.rb:50:in `schedule'", "/usr/local/rvm/gems/ruby-2.2.1/gems/eventmachine-1.0.8/lib/em/timers.rb:37:in `initialize'", "/usr/local/rvm/gems/ruby-2.2.1/gems/eventmachine-1.0.8/lib/eventmachine.rb:358:in `new'", "/usr/local/rvm/gems/ruby-2.2.1/gems/eventmachine-1.0.8/lib/eventmachine.rb:358:in `add_periodic_timer'", "monitor.rb:31:in `run'", "monitor.rb:125:in `block (2 levels) in run'"]
+I, [2015-08-27T08:32:12.611468 #3719]  INFO -- : starting monitoring 
+I, [2015-08-27T08:32:12.628608 #3719]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T08:32:17.113090 #3719]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:32:17.113273 #3719]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:33:35.971180 #3725]  INFO -- : starting job 
+E, [2015-08-27T08:33:35.971275 #3725] ERROR -- : unable to start job eventmachine not initialized: evma_install_oneshot_timer
+E, [2015-08-27T08:33:35.971315 #3725] ERROR -- : ["/usr/local/rvm/gems/ruby-2.2.1/gems/eventmachine-1.0.8/lib/eventmachine.rb:331:in `add_oneshot_timer'", "/usr/local/rvm/gems/ruby-2.2.1/gems/eventmachine-1.0.8/lib/eventmachine.rb:331:in `add_timer'", "monitor.rb:31:in `run'", "monitor.rb:125:in `block (2 levels) in run'"]
+I, [2015-08-27T08:33:35.971400 #3725]  INFO -- : starting monitoring 
+I, [2015-08-27T08:33:35.987706 #3725]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T08:33:38.672729 #3725]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:33:38.673135 #3725]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:54:11.547431 #3816]  INFO -- : starting job 
+E, [2015-08-27T08:54:11.547524 #3816] ERROR -- : unable to start job no implicit conversion of String into IO
+E, [2015-08-27T08:54:11.547560 #3816] ERROR -- : ["monitor.rb:32:in `select'", "monitor.rb:32:in `run'", "monitor.rb:128:in `block (2 levels) in run'"]
+I, [2015-08-27T08:54:11.549003 #3816]  INFO -- : starting monitoring 
+I, [2015-08-27T08:54:11.565906 #3816]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T08:54:26.245668 #3816]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:54:26.246985 #3816]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:55:45.944722 #3823]  INFO -- : starting job 
+E, [2015-08-27T08:55:45.944918 #3823] ERROR -- : unable to start job undefined method `to_io' for #<Logger:0xa40fe34>
+E, [2015-08-27T08:55:45.944957 #3823] ERROR -- : ["monitor.rb:32:in `run'", "monitor.rb:128:in `block (2 levels) in run'"]
+I, [2015-08-27T08:55:45.946691 #3823]  INFO -- : starting monitoring 
+I, [2015-08-27T08:55:45.962704 #3823]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T08:55:49.909473 #3823]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T08:55:49.909909 #3823]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T09:01:40.623450 #3831]  INFO -- : starting job 
+E, [2015-08-27T09:01:40.623577 #3831] ERROR -- : unable to start job undefined method `now_and_every' for #<Timers::Group:0x9ca089c>
+E, [2015-08-27T09:01:40.623613 #3831] ERROR -- : ["monitor.rb:33:in `run'", "monitor.rb:130:in `block (2 levels) in run'"]
+I, [2015-08-27T09:01:40.625046 #3831]  INFO -- : starting monitoring 
+I, [2015-08-27T09:01:40.642163 #3831]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T09:01:44.323719 #3831]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T09:01:44.324793 #3831]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T09:02:40.134347 #3837]  INFO -- : starting job 
+I, [2015-08-27T09:02:40.134524 #3837]  INFO -- : starting monitoring 
+I, [2015-08-27T09:02:40.151705 #3837]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T09:02:43.012387 #3837]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T09:02:43.012717 #3837]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T09:02:45.134948 #3837]  INFO -- : Processing Job file:(/tmp/inbound/abc.xml)
+I, [2015-08-27T09:03:05.925766 #3845]  INFO -- : starting job 
+I, [2015-08-27T09:03:05.926846 #3845]  INFO -- : starting monitoring 
+I, [2015-08-27T09:03:05.945860 #3845]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T09:03:09.387702 #3845]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T09:03:09.388775 #3845]  INFO -- : /tmp/inbound/abc.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T09:03:09.535081 #3845]  INFO -- : Processing Job file:(/tmp/inbound/abc.xml)
+I, [2015-08-27T15:41:52.256532 #2273]  INFO -- : starting job 
+I, [2015-08-27T15:41:52.257340 #2273]  INFO -- : starting monitoring 
+I, [2015-08-27T15:41:52.449611 #2273]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T15:42:18.307348 #2273]  INFO -- : /tmp/inbound/testing.xml is created
+I, [2015-08-27T15:42:18.308501 #2273]  INFO -- : /tmp/inbound/testing.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T15:42:18.802189 #2273]  INFO -- : Processing Job file:(/tmp/inbound/testing.xml)
+E, [2015-08-27T15:42:18.802858 #2273] ERROR -- : unable to start job undefined local variable or method `mapping' for #<PhalithaEventHandler:0xab58358>
+E, [2015-08-27T15:42:18.803075 #2273] ERROR -- : ["monitor.rb:39:in `block in run'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `call'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:43:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:85:in `block in fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `reverse_each'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:80:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:64:in `wait'", "monitor.rb:48:in `block in run'", "monitor.rb:48:in `loop'", "monitor.rb:48:in `run'", "monitor.rb:139:in `block (2 levels) in run'"]
+I, [2015-08-27T15:43:31.401721 #2280]  INFO -- : starting job 
+I, [2015-08-27T15:43:31.401853 #2280]  INFO -- : starting monitoring 
+I, [2015-08-27T15:43:31.418194 #2280]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T15:43:35.748449 #2280]  INFO -- : /tmp/inbound/testing.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T15:43:35.906678 #2280]  INFO -- : Processing Job file:(/tmp/inbound/testing.xml)
+E, [2015-08-27T15:43:35.907593 #2280] ERROR -- : unable to start job undefined local variable or method `mapping' for #<PhalithaEventHandler:0x9469214>
+E, [2015-08-27T15:43:35.907780 #2280] ERROR -- : ["monitor.rb:39:in `block in run'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `call'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:43:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:85:in `block in fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `reverse_each'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:80:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:64:in `wait'", "monitor.rb:46:in `block in run'", "monitor.rb:46:in `loop'", "monitor.rb:46:in `run'", "monitor.rb:137:in `block (2 levels) in run'"]
+I, [2015-08-27T15:44:48.657696 #2285]  INFO -- : starting job 
+I, [2015-08-27T15:44:48.660420 #2285]  INFO -- : starting monitoring 
+I, [2015-08-27T15:44:48.676984 #2285]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T15:44:52.333166 #2285]  INFO -- : /tmp/inbound/testing.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T15:44:52.662512 #2285]  INFO -- : Processing Job file:(/tmp/inbound/testing.xml)
+E, [2015-08-27T15:44:52.725730 #2285] ERROR -- : unable to start job Couldn't find Mapping with 'id'=
+E, [2015-08-27T15:44:52.726778 #2285] ERROR -- : ["/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/core.rb:155:in `find'", "monitor.rb:40:in `block in run'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `call'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:43:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:85:in `block in fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `reverse_each'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:80:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:64:in `wait'", "monitor.rb:46:in `block in run'", "monitor.rb:46:in `loop'", "monitor.rb:46:in `run'", "monitor.rb:137:in `block (2 levels) in run'"]
+I, [2015-08-27T15:45:56.965044 #2291]  INFO -- : starting job 
+I, [2015-08-27T15:45:56.965222 #2291]  INFO -- : starting monitoring 
+I, [2015-08-27T15:45:56.981436 #2291]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-27T15:46:00.565170 #2291]  INFO -- : /tmp/inbound/testing.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-27T15:46:00.969878 #2291]  INFO -- : Processing Job file:(/tmp/inbound/testing.xml)
+I, [2015-08-28T05:52:43.996444 #2172]  INFO -- : starting job 
+I, [2015-08-28T05:52:43.998417 #2172]  INFO -- : starting monitoring 
+I, [2015-08-28T05:52:44.090813 #2172]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-28T05:53:08.029865 #2172]  INFO -- : /tmp/inbound/test.xml is created
+I, [2015-08-28T05:53:08.030539 #2172]  INFO -- : /tmp/inbound/test.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-28T05:53:08.052500 #2172]  INFO -- : Processing Job file:(/tmp/inbound/test.xml)
+E, [2015-08-28T05:53:08.053236 #2172] ERROR -- : unable to start job undefined local variable or method `mapping_fields' for #<PhalithaEventHandler:0xa76023c>
+E, [2015-08-28T05:53:08.053546 #2172] ERROR -- : ["monitor.rb:40:in `block in run'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `call'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:43:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:85:in `block in fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `reverse_each'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:80:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:64:in `wait'", "monitor.rb:50:in `block in run'", "monitor.rb:50:in `loop'", "monitor.rb:50:in `run'", "monitor.rb:141:in `block (2 levels) in run'"]
+I, [2015-08-28T05:54:01.421883 #2271]  INFO -- : starting job 
+I, [2015-08-28T05:54:01.423476 #2271]  INFO -- : starting monitoring 
+I, [2015-08-28T05:54:01.440478 #2271]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-28T05:54:06.653467 #2271]  INFO -- : /tmp/inbound/test.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-28T05:54:06.925280 #2271]  INFO -- : Processing Job file:(/tmp/inbound/test.xml)
+E, [2015-08-28T05:54:06.926164 #2271] ERROR -- : unable to start job undefined local variable or method `mapping_field' for #<PhalithaEventHandler:0x9bea3a8>
+E, [2015-08-28T05:54:06.926306 #2271] ERROR -- : ["monitor.rb:40:in `block in run'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `call'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:43:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:85:in `block in fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `reverse_each'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:80:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:64:in `wait'", "monitor.rb:50:in `block in run'", "monitor.rb:50:in `loop'", "monitor.rb:50:in `run'", "monitor.rb:141:in `block (2 levels) in run'"]
+I, [2015-08-28T05:54:53.467376 #2277]  INFO -- : starting job 
+I, [2015-08-28T05:54:53.469103 #2277]  INFO -- : starting monitoring 
+I, [2015-08-28T05:54:53.485648 #2277]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-28T05:55:06.483397 #2277]  INFO -- : /tmp/inbound/test.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-28T05:55:06.980983 #2277]  INFO -- : Processing Job file:(/tmp/inbound/test.xml)
+I, [2015-08-28T06:09:03.512537 #2364]  INFO -- : starting job 
+I, [2015-08-28T06:09:03.512716 #2364]  INFO -- : starting monitoring 
+I, [2015-08-28T06:09:03.531832 #2364]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-28T06:09:17.462402 #2364]  INFO -- : /tmp/inbound/testxml.xml is created
+I, [2015-08-28T06:09:17.462968 #2364]  INFO -- : /tmp/inbound/testxml.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-28T06:09:17.522901 #2364]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+E, [2015-08-28T06:09:17.523249 #2364] ERROR -- : unable to start job no implicit conversion of String into Integer
+E, [2015-08-28T06:09:17.523404 #2364] ERROR -- : ["monitor.rb:43:in `[]'", "monitor.rb:43:in `block in run'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `call'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:43:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:85:in `block in fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `reverse_each'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:80:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:64:in `wait'", "monitor.rb:64:in `block in run'", "monitor.rb:64:in `loop'", "monitor.rb:64:in `run'", "monitor.rb:155:in `block (2 levels) in run'"]
+I, [2015-08-28T06:10:17.982186 #2370]  INFO -- : starting job 
+I, [2015-08-28T06:10:17.982325 #2370]  INFO -- : starting monitoring 
+I, [2015-08-28T06:10:17.998495 #2370]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-28T06:10:22.979136 #2370]  INFO -- : /tmp/inbound/testxml.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-28T06:10:22.986068 #2370]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+E, [2015-08-28T06:10:23.008108 #2370] ERROR -- : unable to start job undefined local variable or method `searchpath' for #<PhalithaEventHandler:0xad6fb64>
+E, [2015-08-28T06:10:23.008249 #2370] ERROR -- : ["monitor.rb:51:in `block (2 levels) in run'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/relation/delegation.rb:46:in `each'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/relation/delegation.rb:46:in `each'", "monitor.rb:49:in `block in run'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `call'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:43:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:85:in `block in fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `reverse_each'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:80:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:64:in `wait'", "monitor.rb:64:in `block in run'", "monitor.rb:64:in `loop'", "monitor.rb:64:in `run'", "monitor.rb:155:in `block (2 levels) in run'"]
+I, [2015-08-28T06:11:32.307036 #2379]  INFO -- : starting job 
+I, [2015-08-28T06:11:32.309046 #2379]  INFO -- : starting monitoring 
+I, [2015-08-28T06:11:32.325072 #2379]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-28T06:11:37.952269 #2379]  INFO -- : /tmp/inbound/testxml.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-28T06:11:38.313406 #2379]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2015-08-28T06:11:38.367194 #2379]  INFO -- : /tmp/inbound/testxml.xml will proccessed with matching critera given for mapping(177)
+I, [2015-08-28T06:14:06.628630 #2379]  INFO -- : /tmp/inbound/testxml.xml is deleted
+I, [2015-08-28T06:19:06.693979 #2392]  INFO -- : starting job 
+I, [2015-08-28T06:19:06.694048 #2392]  INFO -- : starting monitoring 
+I, [2015-08-28T06:23:41.877651 #2409]  INFO -- : starting job 
+I, [2015-08-28T06:23:41.881075 #2409]  INFO -- : starting monitoring 
+I, [2015-08-28T06:24:56.384357 #2420]  INFO -- : starting job 
+I, [2015-08-28T06:24:56.386286 #2420]  INFO -- : starting monitoring 
+I, [2015-08-28T06:27:40.084897 #2428]  INFO -- : starting job 
+I, [2015-08-28T06:27:40.086979 #2428]  INFO -- : starting monitoring 
+I, [2015-08-28T06:28:19.401151 #2435]  INFO -- : starting job 
+I, [2015-08-28T06:28:19.403260 #2435]  INFO -- : starting monitoring 
+I, [2015-08-28T06:28:19.419951 #2435]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-28T06:28:23.541474 #2435]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-08-28T06:28:23.903420 #2435]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2015-08-28T06:29:42.415641 #2443]  INFO -- : starting job 
+I, [2015-08-28T06:29:42.416961 #2443]  INFO -- : starting monitoring 
+I, [2015-08-28T06:29:42.434028 #2443]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-28T06:29:48.690314 #2443]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-08-28T06:29:48.922453 #2443]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2015-08-30T01:16:47.448098 #3896]  INFO -- : starting job 
+I, [2015-08-30T01:16:47.448219 #3896]  INFO -- : starting monitoring 
+I, [2015-08-30T01:16:47.499778 #3896]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-30T01:17:05.703023 #3896]  INFO -- : /tmp/inbound/testxml.xml is created
+I, [2015-08-30T01:17:05.703378 #3896]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-08-30T01:17:06.010243 #3896]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+E, [2015-08-30T01:17:06.125984 #3896] ERROR -- : unable to start job missing attribute: accesscode
+E, [2015-08-30T01:17:06.126161 #3896] ERROR -- : ["/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute_methods/read.rb:93:in `block in _read_attribute'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute_set.rb:31:in `block in fetch_value'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute.rb:150:in `value'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute_set.rb:31:in `fetch_value'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute_methods/read.rb:87:in `read_attribute'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute_methods.rb:359:in `[]'", "monitor.rb:133:in `block (2 levels) in run'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/relation/delegation.rb:46:in `each'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/relation/delegation.rb:46:in `each'", "monitor.rb:128:in `block in run'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `call'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:43:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:85:in `block in fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `reverse_each'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:80:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:64:in `wait'", "monitor.rb:144:in `block in run'", "monitor.rb:144:in `loop'", "monitor.rb:144:in `run'", "monitor.rb:236:in `block (2 levels) in run'"]
+I, [2015-08-30T01:22:35.595956 #3896]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-08-30T01:29:01.438228 #3943]  INFO -- : starting job 
+I, [2015-08-30T01:29:01.438450 #3943]  INFO -- : starting monitoring 
+I, [2015-08-30T01:29:01.495578 #3943]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-30T01:29:25.149325 #3943]  INFO -- : /tmp/inbound/testxml.xml is created
+I, [2015-08-30T01:29:25.149939 #3943]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-08-30T01:29:25.466922 #3943]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+E, [2015-08-30T01:29:25.535722 #3943] ERROR -- : unable to start job missing attribute: accesscode
+E, [2015-08-30T01:29:25.535869 #3943] ERROR -- : ["/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute_methods/read.rb:93:in `block in _read_attribute'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute_set.rb:31:in `block in fetch_value'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute.rb:150:in `value'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute_set.rb:31:in `fetch_value'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute_methods/read.rb:87:in `read_attribute'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/attribute_methods.rb:359:in `[]'", "monitor.rb:133:in `block (2 levels) in run'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/relation/delegation.rb:46:in `each'", "/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.4/lib/active_record/relation/delegation.rb:46:in `each'", "monitor.rb:128:in `block in run'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `call'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/timer.rb:97:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:43:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:85:in `block in fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `reverse_each'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/events.rb:84:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:80:in `fire'", "/usr/local/rvm/gems/ruby-2.2.1/gems/timers-4.0.1/lib/timers/group.rb:64:in `wait'", "monitor.rb:144:in `block in run'", "monitor.rb:144:in `loop'", "monitor.rb:144:in `run'", "monitor.rb:236:in `block (2 levels) in run'"]
+I, [2015-08-30T01:32:12.363068 #3976]  INFO -- : starting job 
+I, [2015-08-30T01:32:12.365050 #3976]  INFO -- : starting monitoring 
+I, [2015-08-30T01:32:12.390944 #3976]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-30T01:32:35.270629 #3986]  INFO -- : starting job 
+I, [2015-08-30T01:32:35.271620 #3986]  INFO -- : starting monitoring 
+I, [2015-08-30T01:32:35.300230 #3986]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-30T01:32:43.260526 #3986]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-08-30T01:32:43.282306 #3986]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2015-08-30T01:33:57.564301 #3986]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-08-30T01:33:57.876104 #3986]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2015-08-30T01:35:37.983672 #3997]  INFO -- : starting job 
+I, [2015-08-30T01:35:37.986873 #3997]  INFO -- : starting monitoring 
+I, [2015-08-30T01:35:38.012168 #3997]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-08-30T01:35:41.833778 #3997]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-08-30T01:35:41.986961 #3997]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2015-08-30T01:38:36.259767 #3997]  INFO -- : /tmp/inbound/testxml.xml is deleted
+I, [2015-08-30T01:38:58.436812 #3997]  INFO -- : /tmp/inbound/testxml.xml is created
+I, [2015-08-30T01:38:58.438281 #3997]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-08-30T01:38:58.438420 #3997]  INFO -- : /tmp/inbound/testxml.xml is attributes updated 
+I, [2015-08-30T01:38:58.710951 #3997]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2015-09-02T01:57:27.843179 #3004]  INFO -- : starting job 
+I, [2015-09-02T01:57:27.843301 #3004]  INFO -- : starting monitoring 
+I, [2015-09-02T01:57:27.906342 #3004]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-09-02T01:57:41.080361 #3004]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-09-02T01:57:41.406040 #3004]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2015-09-04T04:47:14.871312 #4266]  INFO -- : starting job 
+I, [2015-09-04T04:47:14.873556 #4266]  INFO -- : starting monitoring 
+I, [2015-09-04T04:47:14.949869 #4266]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-09-04T04:51:08.205713 #4266]  INFO -- : /tmp/inbound/testxml.xml is deleted
+I, [2015-09-04T04:52:06.393413 #4266]  INFO -- : /tmp/inbound/testxml.xml is created
+I, [2015-09-04T04:52:06.394379 #4266]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-09-04T04:52:06.395028 #4266]  INFO -- : /tmp/inbound/testxml.xml is attributes updated 
+I, [2015-09-04T04:52:06.706748 #4266]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2015-09-04T04:52:38.612582 #4266]  INFO -- : /tmp/inbound/testxml.xml is deleted
+I, [2015-09-04T04:52:42.043026 #4266]  INFO -- : /tmp/inbound/testxml.xml is created
+I, [2015-09-04T04:52:42.044224 #4266]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-09-04T04:52:42.044341 #4266]  INFO -- : /tmp/inbound/testxml.xml is attributes updated 
+I, [2015-09-04T04:52:42.240916 #4266]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2015-09-04T04:52:48.561016 #4266]  INFO -- : /tmp/inbound/testxml.xml is deleted
+I, [2015-09-04T04:53:01.818211 #4266]  INFO -- : /tmp/inbound/testxml.xml is created
+I, [2015-09-04T04:53:01.820112 #4266]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-09-04T04:53:01.821114 #4266]  INFO -- : /tmp/inbound/testxml.xml is attributes updated 
+I, [2015-09-04T04:53:02.263696 #4266]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2015-09-10T21:06:17.983615 #1974]  INFO -- : starting job 
+I, [2015-09-10T21:06:17.983889 #1974]  INFO -- : starting monitoring 
+I, [2015-09-10T21:06:18.183223 #1974]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-09-10T21:17:13.847145 #1974]  INFO -- : starting job 
+I, [2015-09-10T21:17:13.848094 #1974]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-09-10T21:17:13.850523 #1974]  INFO -- : starting monitoring 
+I, [2015-09-10T21:17:13.894930 #1974]  INFO -- : /tmp/inbound/datacenter is ignored due to matching critera given for mapping(177)
+I, [2015-09-10T21:17:13.895947 #1974]  INFO -- : /tmp/inbound/datacenter is ignored due to matching critera given for mapping(177)
+I, [2015-09-10T21:17:40.104269 #1974]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)
+I, [2015-09-10T21:17:40.105469 #1974]  INFO -- : starting job 
+I, [2015-09-10T21:17:40.105801 #1974]  INFO -- : starting monitoring 
+I, [2015-09-10T21:26:41.781419 #1974]  INFO -- : /tmp/inbound/testxml.xml is deleted
+I, [2015-09-10T21:26:41.782036 #1974]  INFO -- : /tmp/inbound/testxml.xml is deleted
+I, [2015-09-10T21:26:41.782666 #1974]  INFO -- : /tmp/inbound/testxml.xml is deleted
+I, [2015-09-10T21:26:45.531995 #1974]  INFO -- : /tmp/inbound/testxml.xml is created
+I, [2015-09-10T21:26:45.532322 #1974]  INFO -- : /tmp/inbound/testxml.xml is created
+I, [2015-09-10T21:26:45.533435 #1974]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-09-10T21:26:45.534522 #1974]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-09-10T21:26:45.534632 #1974]  INFO -- : /tmp/inbound/testxml.xml is attributes updated 
+I, [2015-09-10T21:26:45.534341 #1974]  INFO -- : /tmp/inbound/testxml.xml is attributes updated 
+I, [2015-09-10T21:26:45.532717 #1974]  INFO -- : /tmp/inbound/testxml.xml is created
+I, [2015-09-10T21:26:45.534994 #1974]  INFO -- : /tmp/inbound/testxml.xml will proccessed as /tmp/outbound/testxml.xml with matching critera given for mapping(177)
+I, [2015-09-10T21:26:45.535174 #1974]  INFO -- : /tmp/inbound/testxml.xml is attributes updated 
+I, [2015-09-10T21:26:45.716389 #1974]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2015-09-10T21:26:45.884566 #1974]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2015-09-10T21:26:45.978250 #1974]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)

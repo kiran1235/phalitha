@@ -1,0 +1,4 @@
+== Sinatra (v1.4.6) has taken the stage on 3001 for development with backup from Thin
+192.168.56.2 - - [27/Aug/2015:01:57:30 +0000] "GET / HTTP/1.1" 200 27 0.0186
+192.168.56.2 - - [27/Aug/2015:01:57:30 +0000] "GET /favicon.ico HTTP/1.1" 404 477 0.0011
+192.168.56.2 - - [27/Aug/2015:01:57:36 +0000] "GET /status HTTP/1.1" 200 27 0.1749

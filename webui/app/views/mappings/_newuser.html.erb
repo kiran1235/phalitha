@@ -1,0 +1,27 @@
+<form class="form-horizontal" role="form" accept-charset="UTF-8" action="<%=instance_mapping_save_user_path(@instance[:id],@mapping[:id])%>" method="post" data-remote="true" id="frmNewUsers" style="margin-left:5px;">
+	<%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+	<% @instance_users.each do |instance_user|%>
+	  <div class="form-group">
+	    <div class="checkbox">
+	    	<label><%= check_box_tag "user_selected[]", value="#{instance_user[:id]}"%><%=instance_user[:name]%>(<%=instance_user[:username]%>)</label>
+	    </div>
+	  </div>	
+	<% end %>
+	<div class="form-group">
+		<button type="button" class="btn btn-sm btn-success" onclick="submitform('#frmNewUsers')">
+			submit			
+		</button>
+	</div>
+</form>
+<script>
+function submitform(id){
+	
+	$(id).on("ajax:success",function(e,data,status,xhr){
+		if(data['rc']==0){
+			window.top.location=data['redirect'];
+		}
+	}).on("ajax:error",function(e,data,status,xhr){
+		alert("oops! something is wrong")
+	}).submit();
+}
+</script>

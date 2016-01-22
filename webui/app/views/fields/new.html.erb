@@ -1,0 +1,75 @@
+<!-- <h1 style="border-bottom:1px solid #000">Mapping (<%=@mapping.name%>) <small> in Instance(<%=@instance.name%>)</small> </h1>
+<div class="row">
+	<div class="col-sm-12 box-group">
+		<h3 class="col-sm-2 text-muted" data-target="frmSetupMapping"> 1. Setup </h2>
+		<h3 class="col-sm-2 text-muted" data-target="frmCreateMapping"> 2. Import </h2>
+		<h3 class="col-sm-2 active" data-target="frmCreateMapping"> 3. Configuration </h2>
+		<h3 class="col-sm-2 text-muted" data-target="frmValidateMapping"> 4. Permissions </h2>
+		<h3 class="col-sm-2 text-muted" data-target="frmValidateMapping"> 5. Validation </h2>
+	</div>
+</div> -->
+
+<div class="row">
+	<div class="col-sm-12">
+		<h4 class="text-muted">Warning: Change in configuration remove all user permissions</h4>
+		<div class="well xmltree col-sm-4">
+			<h4> XML Structure </h4> 
+			<%= @xmltree %>
+		</div>
+		<div class="well xmltreeeditor col-sm-6">
+			<h4> Field Configuration </h4>
+			<form id="frmCreateMapping" class='xmltreeform' method="post" enctype="x-www-form-urlencoded" data-remote="true" action="<%= instance_mapping_fields_save_path(@instance[:id],@mapping[:id],@fileid) %>">
+				<%= @xmltreeform%>
+			</form>
+		</div>
+	</div>
+	<div class="col-sm-12" style="margin-top:10px;">
+		<button class="btn btn-default btn-success" onclick="submitform('#frmCreateMapping')">
+			submit			
+		</button>
+		<button class="btn btn-default btn-danger" onclick="javascript:(window.parent.location.reload())();">
+			cancel			
+		</button>		
+	</div>
+</div>
+
+
+<script>
+var prevtarget=undefined;
+
+function submitform(id){
+	$(id).on("ajax:success",function(e,data,status,xhr){
+		if(data['rc']==0){
+			window.top.location=data['redirect'];
+		}
+	}).on("ajax:error",function(e,data,status,xhr){
+		window.App.Modal.show("Error","<div style='text-align:center'> Sorry! Something went wrong, please try again</div>","sm");
+	}).submit();
+}
+
+$(document).ready(function(){
+	$(".xmltree .node span").on("dblclick",function(e){
+		if($(this).hasClass("minus")){
+			$(this).removeClass("minus").addClass("plus");
+			parent=$(this).parent();
+			$(parent).children("ol").hide();
+			$(parent).children("ul").hide();
+		}else if($(this).hasClass("plus")){
+			$(this).removeClass("plus").addClass("minus");
+			$(parent).children("ol").show();
+			$(parent).children("ul").show();
+		}
+	}).on("click",function(e){
+		target=$(this).attr("data-target");
+		if($(".xmltreeform "+target).hasClass("hide")){
+			if(prevtarget != undefined){
+				$(".xmltreeform "+prevtarget).addClass("hide");
+			}
+			$(".xmltreeform "+target).removeClass("hide");	
+			prevtarget=target;
+		}else{
+			$(".xmltreeform "+target).addClass("hide");
+		}
+	});
+});
+</script>
