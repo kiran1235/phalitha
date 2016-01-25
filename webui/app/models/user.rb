@@ -1,15 +1,16 @@
 class User < ActiveRecord::Base
   has_many :instances_users
   has_many :instances, through: :instances_users
-  
+
   has_many :mappings_users
   has_many :mappings, through: :mappings_users
   has_many :userpermissions
   has_many :permissions, through: :userpermissions
   has_many :usertokens
-  
+
   has_many :mapping_fields, through: :permissions
-  
+  has_many :context, through: :contextusers
+  has_many :contexttokens, through: :contextusers
   before_create :setup_user
   def self.generate_hashkey(username,password)
     return Digest::MD5.hexdigest("#{username}:#{password}")

@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
 def cors_set_access_control_headers
   headers['Access-Control-Allow-Origin'] = '*'
-  headers['Access-Control-Allow-Methods'] = 'POST, GET, OPTIONS'
+  headers['Access-Control-Allow-Methods'] = 'PUT,DELETE,AUTH,POST, GET, OPTIONS'
   headers['Access-Control-Allow-Headers'] = '*'
   headers['Access-Control-Max-Age'] = "1728000"
 end
@@ -21,7 +21,7 @@ end
 def cors_preflight_check
   if request.method == :options
 	headers['Access-Control-Allow-Origin'] = '*'
-	headers['Access-Control-Allow-Methods'] = 'POST, GET, OPTIONS'
+	headers['Access-Control-Allow-Methods'] = 'PUT,DELETE,AUTH,POST, GET, OPTIONS'
 	headers['Access-Control-Allow-Headers'] = '*'
 	headers['Access-Control-Max-Age'] = '1728000'
 	render :text => '', :content_type => 'text/plain'
@@ -34,16 +34,14 @@ def flushFlashMessages
 	end
 end
 
-private 
+private
   def set_logged_user
-    if session[:is_user_validated]
-      @@user=User.find_by_id(session[:user_id])
-    else
-      if !(params[:controller].eql? "welcome") and !(params[:controller].eql? "api")
-        redirect_to root_url
+    if !(params[:controller].eql? "welcome") and !(params[:controller].eql? "api") and !(params[:controller].eql? "context")
+      if session[:is_user_validated]
+        @@user=User.find_by_id(session[:user_id])
+      else
+          redirect_to root_url
       end
-    end 
+    end
   end
-  
-
 end

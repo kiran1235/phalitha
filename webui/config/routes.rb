@@ -9,8 +9,17 @@ Rails.application.routes.draw do
   get 'api/auth' => 'api#auth'
   post 'api/auth' => 'api#validate'
   post 'api/parse' => 'api#parse'
+
+  get 'api/context/' =>'context#error'
+  get 'api/context/:id' =>'context#getcontext'
+  post 'api/context' =>'context#createcontext'
+  get 'api/context/:id/token/:token' =>'context#gettoken'
+  post 'api/context/:id/token/' =>'context#createtoken'
+
+
+
   #get 'home' => "welcome#home"
-  
+
   #get  'createnewinstance' => 'welcome#createnewinstance'
   #post  'createnewinstance' => 'welcome#savenewinstance'
   #post 'upload' => 'file#upload'
@@ -19,7 +28,7 @@ Rails.application.routes.draw do
   get 'logs/instances/:id' => 'logs#instances', as: :logs_instances
   get 'logs/mappings/:id' => 'logs#mappings', as: :logs_mappings
   get 'logs/users/:id' => 'logs#users', as: :logs_users
-  
+
   #resources :users
   resources :instances do
     resources :users
@@ -32,12 +41,11 @@ Rails.application.routes.draw do
       get 'fields/:id/edit' => "fields#edit" , as: :fields_edit
       put 'fields/' => "fields#update" , as: :fields_update
       post 'fields/import' => "fields#import"
-      post 'fields/:id/save' => "fields#save", as: :fields_save 
+      post 'fields/:id/save' => "fields#save", as: :fields_save
       get 'fields/:id/newuser' => 'fields#newuser', as: :fields_new_user
       post 'fields/:id/newuser' => 'fields#adduser', as: :fields_save_user
       get 'fields/:id/deleteuser' => 'fields#deleteuser', as: :fields_delete_user
       post 'fields/:id/deleteuser' => 'fields#removeuser', as: :fields_remove_user
-      
       #resources :users
     end
   end

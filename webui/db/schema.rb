@@ -11,7 +11,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150901222249) do
+ActiveRecord::Schema.define(version: 20160125025640) do
+
+  create_table "contextpermissions", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "contexts", force: true do |t|
+    t.integer  "instance_id"
+    t.text     "rawdata",     limit: 2147483647, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "contexts", ["instance_id"], name: "index_contexts_on_instance_id", using: :btree
+
+  create_table "contexttokens", force: true do |t|
+    t.integer  "context_id"
+    t.string   "context_token"
+    t.text     "context_token_data", limit: 2147483647, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "contexttokens", ["context_id"], name: "index_contexttokens_on_context_id", using: :btree
+
+  create_table "contextusers", force: true do |t|
+    t.integer  "context_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "contextusers", ["context_id"], name: "index_contextusers_on_context_id", using: :btree
+  add_index "contextusers", ["user_id"], name: "index_contextusers_on_user_id", using: :btree
 
   create_table "instances", force: true do |t|
     t.string   "name"
