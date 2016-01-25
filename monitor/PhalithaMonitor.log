@@ -409,3 +409,6 @@ I, [2015-09-10T21:26:45.535174 #1974]  INFO -- : /tmp/inbound/testxml.xml is att
 I, [2015-09-10T21:26:45.716389 #1974]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
 I, [2015-09-10T21:26:45.884566 #1974]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
 I, [2015-09-10T21:26:45.978250 #1974]  INFO -- : Processing Job file:(/tmp/inbound/testxml.xml)
+I, [2016-01-25T19:43:18.029545 #2352]  INFO -- : starting job 
+I, [2016-01-25T19:43:18.029914 #2352]  INFO -- : starting monitoring 
+I, [2016-01-25T19:43:18.116020 #2352]  INFO -- : watching for files like ^.*\.xml$ in /tmp/inbound/ for mapping(177)

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160125025640) do
+ActiveRecord::Schema.define(version: 20160125201736) do
 
   create_table "contextpermissions", force: true do |t|
     t.datetime "created_at"
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 20160125025640) do
     t.text     "rawdata",     limit: 2147483647, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "hashkey"
+    t.string   "accesskey"
   end
 
   add_index "contexts", ["instance_id"], name: "index_contexts_on_instance_id", using: :btree
@@ -68,6 +70,8 @@ ActiveRecord::Schema.define(version: 20160125025640) do
     t.text     "logdata",      limit: 2147483647, null: false
     t.datetime "createddate"
     t.datetime "modifieddate"
+    t.string   "category"
+    t.string   "subcategory"
   end
 
   create_table "mapping_fields", force: true do |t|

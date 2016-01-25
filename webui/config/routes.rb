@@ -10,11 +10,13 @@ Rails.application.routes.draw do
   post 'api/auth' => 'api#validate'
   post 'api/parse' => 'api#parse'
 
-  get 'api/context/' =>'context#error'
-  get 'api/context/:id' =>'context#getcontext'
-  post 'api/context' =>'context#createcontext'
-  get 'api/context/:id/token/:token' =>'context#gettoken'
-  post 'api/context/:id/token/' =>'context#createtoken'
+  get 'api/instance/:instance_id/context/' =>'context#error'
+  get 'api/instance/:instance_id/context/:id' =>'context#getcontext'
+  post 'api/instance/:instance_id/context' =>'context#createcontext'
+  put 'api/instance/:instance_id/context/:id' =>'context#savecontext'
+  get 'api/instance/:instance_id/context/:context_id/token/:id' =>'context#gettoken'
+  post 'api/instance/:instance_id/context/:context_id/token/' =>'context#createtoken'
+  put 'api/instance/:instance_id/context/:context_id/token/:id' =>'context#createtoken'
 
 
 
